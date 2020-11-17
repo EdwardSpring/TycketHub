@@ -7,6 +7,15 @@ use Illuminate\Http\Request;
 class PagesController extends Controller{
 
     public function index()    {
-        return 'Woah!, Well Hello There!';
+        $data = [
+            'title' => 'My Home',
+            'services' => [
+                'Web Dev',
+                'Graphics',
+                'Programming'
+            ]
+        ];
+        // return view('pages.landing')->with($data);
+        echo "boy";
     }
 }
